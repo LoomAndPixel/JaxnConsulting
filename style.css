@@ -1,0 +1,16 @@
+/*
+Theme Name: Jaxn
+Theme URI: https://jaxnconsulting.com
+Author: Loom & Pixel
+Author URI: https://loomandpixel.com
+Description: Custom block theme for Jaxn Consulting. Fraunces and Instrument Sans on warm paper, Jaxn Green and a single rust accent.
+Requires at least: 6.6
+Tested up to: 7.1
+Requires PHP: 8.0
+Version: 0.2.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: jaxn
+*/
+
+/* The theme's styles live in assets/css/theme.css (loaded by functions.php). */
