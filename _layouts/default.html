@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+{% include head.html %}
+</head>
+<body>
+<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+<div class="site-blocks">
+{% include header.html %}
+
+<main id="main" class="{{ page.main_class | default: 'jx-main is-layout-flow' }}">
+{{ content }}
+</main>
+
+{% include footer.html %}
+</div>
+<script src="{{ site.baseurl }}/assets/js/menu.js?v={{ site.time | date: '%s' }}" defer></script>
+</body>
+</html>

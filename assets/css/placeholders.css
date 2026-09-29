@@ -1,0 +1,38 @@
+/* Placeholders for the contact form and client portal until those services are set up.
+   The fields are styled by site.css (.jx-form input, label, button); this adds the note and the
+   "not available yet" look. Delete this file once real forms replace the placeholders. */
+
+.jx-placeholder > * { margin: 0 0 16px; }
+.jx-placeholder > :last-child { margin-bottom: 0; }
+.jx-placeholder label { display: block; margin-bottom: 8px; }
+.jx-placeholder input,
+.jx-placeholder textarea { width: 100%; box-sizing: border-box; }
+.jx-placeholder input:disabled,
+.jx-placeholder textarea:disabled { background: var(--jx-paper, #F4EFE6); cursor: not-allowed; }
+.jx-placeholder textarea { min-height: 128px; resize: none; }
+.jx-placeholder button[type="submit"] { width: 100%; }
+.jx-placeholder button:disabled { opacity: 0.45; cursor: not-allowed; }
+.jx-placeholder button:disabled:hover { background: var(--color--green); }
+
+.jx-placeholder__note {
+	font-size: 15px;
+	line-height: 1.55;
+	color: var(--jx-slate, #3E4440);
+	padding: 14px 16px;
+	border: 1px dashed var(--jx-rule, #CFC6B6);
+	border-radius: 12px;
+	background: var(--jx-card, #FBF8F2);
+}
+.jx-placeholder__tag {
+	display: inline-block;
+	margin-right: 6px;
+	padding: 2px 10px;
+	border-radius: 999px;
+	background: var(--jx-sand, #EAE3D6);
+	color: var(--jx-ink, #1C211E);
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	vertical-align: 1px;
+}

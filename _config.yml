@@ -1,0 +1,21 @@
+# Jaxn Consulting website (GitHub Pages).
+title: Jaxn Consulting
+description: Technology that works for people.
+url: "https://jaxnconsulting.com"
+# While the site is only on GitHub's test address (username.github.io/JaxnConsulting/), set baseurl to
+# "/JaxnConsulting". Once jaxnconsulting.com points at GitHub Pages, set it back to "".
+baseurl: ""
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Folders in the repo that are not part of this site.
+exclude:
+  - wordpress-theme
+  - brand
+  - README.md
+  - Gemfile
+  - Gemfile.lock

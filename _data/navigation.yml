@@ -1,0 +1,22 @@
+# Menu links. The header and footer menus are built from these lists.
+header:
+  - title: Services
+    url: /our-services/
+  - title: Work
+    url: /projects/
+  - title: About
+    url: /about/
+  - title: Support
+    url: /support/
+
+footer:
+  - title: Services
+    url: /our-services/
+  - title: Work
+    url: /projects/
+  - title: About
+    url: /about/
+  - title: Support
+    url: /support/
+  - title: Contact
+    url: /contact/

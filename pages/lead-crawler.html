@@ -1,0 +1,217 @@
+---
+permalink: "/vsg-lead-crawler-2/"
+title: "Client Lead Crawler"
+description: "A 24/7 lead-intelligence system on an NVIDIA Jetson Nano that scans public records across metro Memphis every morning, scores each lead for urgency and alerts t…"
+section: "/projects/"
+main_class: "block-group jx-main jx-main--designed is-layout-flow"
+---
+<div class="entry-content block-post-content has-global-padding is-layout-constrained">
+<section class="block-group jx-casehero alignfull has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-group jx-casehero__inner alignwide is-layout-flow">
+<p class="jx-crumbs"><a href="{{ site.baseurl }}/projects/">Work</a> <span class="jx-crumbs__sep">/</span> Client Lead Crawler</p>
+<div class="block-columns alignwide are-vertically-aligned-bottom is-layout-flex layout-columns-7387b849">
+<div class="block-column is-vertically-aligned-bottom is-layout-flow" style="flex-basis:60%">
+<h1 class="block-heading">Leads that find <em><mark class="has-inline-color has-green-color" style="background-color:rgba(0,0,0,0)">you</mark></em> first.</h1>
+</div>
+<div class="block-column is-vertically-aligned-bottom is-layout-flow" style="flex-basis:40%">
+<p class="jx-lead">A 24/7 lead-intelligence system on an NVIDIA Jetson Nano that scans public records across metro Memphis every morning, scores each lead for urgency and alerts the sales team in Slack.</p>
+</div>
+</div>
+<div class="block-columns alignwide jx-facts is-layout-flex layout-columns-7387b849">
+<div class="block-column is-layout-flow">
+<p class="jx-fact__label">Focus</p>
+<p class="jx-fact__value">Automated lead intelligence</p>
+</div>
+<div class="block-column is-layout-flow">
+<p class="jx-fact__label">Hardware</p>
+<p class="jx-fact__value">NVIDIA Jetson Nano, on site</p>
+</div>
+<div class="block-column is-layout-flow">
+<p class="jx-fact__label">Pipeline</p>
+<p class="jx-fact__value">Python · NER · geo-spatial scoring</p>
+</div>
+<div class="block-column is-layout-flow">
+<p class="jx-fact__label">Output</p>
+<p class="jx-fact__value">Google Sheets · Slack alerts</p>
+</div>
+</div>
+</div>
+</section>
+<section class="block-group jx-caseshot alignfull has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-group jx-caseshot__frame jx-caseshot__frame--illo alignwide is-layout-flow">
+<figure class="block-image size-full jx-caseshot__img"><img alt="Illustration: an automated scan over city blocks, with the top lead highlighted" decoding="async" fetchpriority="high" height="1280" sizes="(max-width: 1920px) 100vw, 1920px" src="{{ site.baseurl }}/assets/media/jaxn-illustration-lead-crawler-large.webp" srcset="{{ site.baseurl }}/assets/media/jaxn-illustration-lead-crawler-large.webp 1920w, {{ site.baseurl }}/assets/media/jaxn-illustration-lead-crawler-large-300x200.webp 300w, {{ site.baseurl }}/assets/media/jaxn-illustration-lead-crawler-large-1024x683.webp 1024w, {{ site.baseurl }}/assets/media/jaxn-illustration-lead-crawler-large-768x512.webp 768w, {{ site.baseurl }}/assets/media/jaxn-illustration-lead-crawler-large-1536x1024.webp 1536w" width="1920"/></figure>
+</div>
+</section>
+<section class="block-group jx-casesplit alignfull has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-columns alignwide is-layout-flex layout-columns-7387b849">
+<div class="block-column jx-intro is-layout-flow" style="flex-basis:380px">
+<p class="jx-eyebrow">The problem</p>
+<h2 class="block-heading">Good leads, found too late.</h2>
+</div>
+<div class="block-column jx-casesplit__body is-layout-flow">
+<p>The sales team spent hours researching prospects by hand: scanning the news, cold calling and waiting on referrals. That reactive approach kept missing the best opportunities:</p>
+<ul class="block-list jx-checklist">
+<li>Businesses that had just had a break-in</li>
+<li>New commercial buildings under construction</li>
+<li>Newly licensed businesses with no security in place</li>
+</ul>
+<p>They needed those leads surfaced automatically, before competitors could act.</p>
+</div>
+</div>
+</section>
+<section class="block-group jx-casesolution alignfull has-sand-background-color has-background has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-columns alignwide are-vertically-aligned-bottom jx-casesolution__head is-layout-flex layout-columns-7387b849">
+<div class="block-column is-vertically-aligned-bottom jx-intro is-layout-flow" style="flex-basis:380px">
+<p class="jx-eyebrow">The solution</p>
+<h2 class="block-heading">How it works.</h2>
+</div>
+<div class="block-column is-vertically-aligned-bottom is-layout-flow">
+<p>Every morning at 8:00 AM, collectors pull four public data sources. The pipeline on the Jetson Nano cleans up the records, recognizes businesses and addresses, maps them and scores each lead from 0 to 100. The full list lands in Google Sheets, and anything scoring 70 or more goes straight to Slack.</p>
+</div>
+</div>
+<figure class="block-image size-full jx-diagram alignwide"><img alt="How it works: four public data sources feed a pipeline on an NVIDIA Jetson Nano; the scoring engine rates each lead 0 to 100, writes the daily pipeline to Google Sheets and sends leads scoring 70 or more to Slack" decoding="async" height="680" sizes="(max-width: 2400px) 100vw, 2400px" src="{{ site.baseurl }}/assets/media/jaxn-lead-how-it-works.webp" srcset="{{ site.baseurl }}/assets/media/jaxn-lead-how-it-works.webp 2400w, {{ site.baseurl }}/assets/media/jaxn-lead-how-it-works-300x85.webp 300w, {{ site.baseurl }}/assets/media/jaxn-lead-how-it-works-1024x290.webp 1024w, {{ site.baseurl }}/assets/media/jaxn-lead-how-it-works-768x218.webp 768w, {{ site.baseurl }}/assets/media/jaxn-lead-how-it-works-1536x435.webp 1536w, {{ site.baseurl }}/assets/media/jaxn-lead-how-it-works-2048x580.webp 2048w" width="2400"/></figure>
+</section>
+<section class="block-group jx-casetable alignfull has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-columns alignwide are-vertically-aligned-bottom jx-casetable__head is-layout-flex layout-columns-7387b849">
+<div class="block-column is-vertically-aligned-bottom jx-intro is-layout-flow" style="flex-basis:380px">
+<p class="jx-eyebrow">Data sources</p>
+<h2 class="block-heading">Four public sources, every morning.</h2>
+</div>
+<div class="block-column is-vertically-aligned-bottom is-layout-flow">
+<p>Free, public and collected automatically at 8:00 AM. No one has to go looking.</p>
+</div>
+</div>
+<div class="block-group jx-casetable__wrap alignwide is-layout-flow">
+<figure class="block-table jx-table"><table><thead><tr><th>Source</th><th>What it finds</th><th>Coverage</th></tr></thead><tbody><tr><td>Memphis Police Department</td><td>Commercial burglaries, robberies, theft, vandalism</td><td>City of Memphis, updated daily</td></tr><tr><td>Shelby County building permits</td><td>New commercial construction and renovation</td><td>Shelby County, TN, continuously</td></tr><tr><td>Memphis business licenses</td><td>Newly registered commercial businesses</td><td>City of Memphis, continuously</td></tr><tr><td>SAM.gov federal contracts</td><td>Government facilities needing security services</td><td>Tennessee, Mississippi and Arkansas</td></tr></tbody></table></figure>
+</div>
+</section>
+<section class="block-group jx-casetable alignfull has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-columns alignwide are-vertically-aligned-bottom jx-casetable__head is-layout-flex layout-columns-7387b849">
+<div class="block-column is-vertically-aligned-bottom jx-intro is-layout-flow" style="flex-basis:380px">
+<p class="jx-eyebrow">Scoring</p>
+<h2 class="block-heading">Every lead gets a score.</h2>
+</div>
+<div class="block-column is-vertically-aligned-bottom is-layout-flow">
+<p>Scores run from 0 to 100, weighted by crime severity, repeat targeting, crime density within 5 miles, property value, active construction and business type.</p>
+</div>
+</div>
+<div class="block-group jx-casetable__wrap alignwide is-layout-flow">
+<figure class="block-table jx-sla"><table><thead><tr><th>Priority</th><th>Score</th><th>What happens</th></tr></thead><tbody><tr><td>High</td><td>70–100</td><td>Immediate outreach, with a Slack alert in seconds</td></tr><tr><td>Medium</td><td>40–69</td><td>Added to the active pipeline</td></tr><tr><td>Low</td><td>0–39</td><td>Monitored</td></tr></tbody></table></figure>
+</div>
+</section>
+<section class="block-group jx-casecaps alignfull has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-group jx-features__head jx-casecaps__head alignwide is-content-justification-space-between is-layout-flex layout-group-8a23d30d">
+<div class="block-group jx-intro is-layout-flow">
+<p class="jx-eyebrow">Key capabilities</p>
+<h2 class="block-heading">The pipeline, step by step.</h2>
+</div>
+<ul class="block-list jx-tags">
+<li>Python</li>
+<li>Jetson Nano</li>
+<li>NER</li>
+<li>Geo-spatial</li>
+<li>Google Sheets</li>
+<li>Slack</li>
+<li>Private VPN</li>
+</ul>
+</div>
+<div class="block-group jx-features__grid jx-casecaps__grid jx-casecaps__grid--4 alignwide is-layout-grid layout-group-40fe1019">
+<div class="block-group jx-feat is-layout-flow">
+<p class="jx-feat__num">01</p>
+<h3 class="block-heading">Data ingestion</h3>
+<p>Collectors run each morning against four live sources, handling rate limits, paging and format quirks.</p>
+</div>
+<div class="block-group jx-feat is-layout-flow">
+<p class="jx-feat__num">02</p>
+<h3 class="block-heading">Normalization</h3>
+<p>CSV, JSON, HTML and PDF records become one schema, with addresses standardized for matching.</p>
+</div>
+<div class="block-group jx-feat is-layout-flow">
+<p class="jx-feat__num">03</p>
+<h3 class="block-heading">Entity recognition</h3>
+<p>NER picks out business names, owners and incidents, and links the same business across sources.</p>
+</div>
+<div class="block-group jx-feat is-layout-flow">
+<p class="jx-feat__num">04</p>
+<h3 class="block-heading">Geo-spatial analysis</h3>
+<p>Every record is mapped across 11 counties, with crime density at 0.5, 1 and 5 miles.</p>
+</div>
+<div class="block-group jx-feat is-layout-flow">
+<p class="jx-feat__num">05</p>
+<h3 class="block-heading">Scoring engine</h3>
+<p>A weighted, multi-factor model scores each lead from 0 to 100.</p>
+</div>
+<div class="block-group jx-feat is-layout-flow">
+<p class="jx-feat__num">06</p>
+<h3 class="block-heading">Dedup and enrichment</h3>
+<p>Duplicates merge and compound their scores; owner contacts come from public assessor records.</p>
+</div>
+<div class="block-group jx-feat is-layout-flow">
+<p class="jx-feat__num">07</p>
+<h3 class="block-heading">Alerting</h3>
+<p>Leads scoring 70 or more reach Slack within seconds; a daily digest updates Google Sheets.</p>
+</div>
+<div class="block-group jx-feat is-layout-flow">
+<p class="jx-feat__num">08</p>
+<h3 class="block-heading">Continuous learning</h3>
+<p>Won and lost deals feed back into the weights to sharpen future scores.</p>
+</div>
+</div>
+</section>
+<section class="block-group jx-results alignfull has-sand-background-color has-background has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-group jx-results__inner alignwide is-layout-flow">
+<div class="block-columns alignwide are-vertically-aligned-bottom jx-results__head is-layout-flex layout-columns-7387b849">
+<div class="block-column is-vertically-aligned-bottom jx-intro is-layout-flow" style="flex-basis:380px">
+<p class="jx-eyebrow">Results</p>
+<h2 class="block-heading">At a glance.</h2>
+</div>
+<div class="block-column is-vertically-aligned-bottom is-layout-flow">
+</div>
+</div>
+<div class="block-columns alignwide jx-stats is-layout-flex layout-columns-7387b849">
+<div class="block-column is-layout-flow">
+<p class="jx-stat__num">24/7</p>
+<p class="jx-stat__label">automated, no manual input</p>
+</div>
+<div class="block-column is-layout-flow">
+<p class="jx-stat__num">4</p>
+<p class="jx-stat__label">public data sources scanned daily</p>
+</div>
+<div class="block-column is-layout-flow">
+<p class="jx-stat__num">11</p>
+<p class="jx-stat__label">counties across Tennessee, Mississippi and Arkansas</p>
+</div>
+<div class="block-column is-layout-flow">
+<p class="jx-stat__num">$0</p>
+<p class="jx-stat__label">to run, beyond the hardware already in place</p>
+</div>
+</div>
+<p class="jx-results__note">Coverage: Shelby, Tipton and Fayette counties in Tennessee; DeSoto, Marshall, Tate, Coahoma, Tunica and Benton in Mississippi; Crittenden and St. Francis in Arkansas. All data travels over an encrypted private VPN.</p>
+</div>
+</section>
+<section class="block-group jx-nextwrap alignfull has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-group jx-next alignwide is-layout-flow">
+<div class="block-columns alignwide are-vertically-aligned-center is-layout-flex layout-columns-7387b849">
+<div class="block-column is-vertically-aligned-center jx-next__text is-layout-flow">
+<p class="jx-eyebrow">Next project</p>
+<h3 class="block-heading"><a href="{{ site.baseurl }}/fleet-dashboard-mppt-and-communications-telemetry-platform/">Solar Fleet Dashboard</a></h3>
+<p>Health, battery risk and location for every remote solar site, on one screen.</p>
+</div>
+<div class="block-column is-vertically-aligned-center is-layout-flow" style="flex-basis:360px">
+<figure class="block-image size-full jx-next__img"><img alt="Fleet Dashboard: device counts, a device inventory table and a map of solar sites" decoding="async" height="1192" sizes="(max-width: 1920px) 100vw, 1920px" src="{{ site.baseurl }}/assets/media/jaxn-fleet-dashboard.webp" srcset="{{ site.baseurl }}/assets/media/jaxn-fleet-dashboard.webp 1920w, {{ site.baseurl }}/assets/media/jaxn-fleet-dashboard-300x186.webp 300w, {{ site.baseurl }}/assets/media/jaxn-fleet-dashboard-1024x636.webp 1024w, {{ site.baseurl }}/assets/media/jaxn-fleet-dashboard-768x477.webp 768w, {{ site.baseurl }}/assets/media/jaxn-fleet-dashboard-1536x954.webp 1536w" width="1920"/></figure>
+</div>
+</div>
+</div>
+</section>
+<section class="block-group jx-cta alignfull has-green-background-color has-background has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-group jx-cta__bar alignwide is-content-justification-space-between is-layout-flex layout-group-e980f4c3">
+<div class="block-group jx-cta__text is-layout-flow">
+<h2 class="block-heading">Want leads before your competitors see them?</h2>
+<p>We build quiet, automated systems that surface opportunities for you.</p>
+</div>
+<div class="block-buttons is-layout-flex">
+<div class="block-button is-style-light"><a class="block-button__link element-button" href="{{ site.baseurl }}/contact/">Talk about your project</a></div>
+</div>
+</div>
+</section>
+</div>

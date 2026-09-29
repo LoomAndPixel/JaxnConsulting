@@ -1,0 +1,158 @@
+---
+permalink: "/fleet-dashboard-mppt-and-communications-telemetry-platform/"
+title: "Solar Fleet Dashboard"
+description: "A full-stack monitoring platform giving real-time visibility into distributed MPPT solar charge controllers and their cellular routers."
+section: "/projects/"
+main_class: "block-group jx-main jx-main--designed is-layout-flow"
+---
+<div class="entry-content block-post-content has-global-padding is-layout-constrained">
+<section class="block-group jx-casehero alignfull has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-group jx-casehero__inner alignwide is-layout-flow">
+<p class="jx-crumbs"><a href="{{ site.baseurl }}/projects/">Work</a> <span class="jx-crumbs__sep">/</span> Solar Fleet Dashboard</p>
+<div class="block-columns alignwide are-vertically-aligned-bottom is-layout-flex layout-columns-7387b849">
+<div class="block-column is-vertically-aligned-bottom is-layout-flow" style="flex-basis:60%">
+<h1 class="block-heading">One screen for a whole <em><mark class="has-inline-color has-green-color" style="background-color:rgba(0,0,0,0)">solar fleet.</mark></em></h1>
+</div>
+<div class="block-column is-vertically-aligned-bottom is-layout-flow" style="flex-basis:40%">
+<p class="jx-lead">A full-stack monitoring platform giving real-time visibility into distributed MPPT solar charge controllers and their cellular routers.</p>
+</div>
+</div>
+<div class="block-columns alignwide jx-facts is-layout-flex layout-columns-7387b849">
+<div class="block-column is-layout-flow">
+<p class="jx-fact__label">Focus</p>
+<p class="jx-fact__value">Operational visibility and reliability</p>
+</div>
+<div class="block-column is-layout-flow">
+<p class="jx-fact__label">Backend</p>
+<p class="jx-fact__value">Node.js · Express · IC2 API</p>
+</div>
+<div class="block-column is-layout-flow">
+<p class="jx-fact__label">Frontend</p>
+<p class="jx-fact__value">HTML/JS · Leaflet maps</p>
+</div>
+<div class="block-column is-layout-flow">
+<p class="jx-fact__label">Hosting</p>
+<p class="jx-fact__value">cPanel · Passenger</p>
+</div>
+</div>
+</div>
+</section>
+<section class="block-group jx-caseshot alignfull has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-group jx-caseshot__frame alignwide is-layout-flow">
+<figure class="block-image size-full jx-caseshot__img"><img alt="Fleet Dashboard: device counts, a device inventory table and a map of solar sites across the eastern United States, with one warning in Memphis" decoding="async" fetchpriority="high" height="1192" sizes="(max-width: 1920px) 100vw, 1920px" src="{{ site.baseurl }}/assets/media/jaxn-fleet-dashboard.webp" srcset="{{ site.baseurl }}/assets/media/jaxn-fleet-dashboard.webp 1920w, {{ site.baseurl }}/assets/media/jaxn-fleet-dashboard-300x186.webp 300w, {{ site.baseurl }}/assets/media/jaxn-fleet-dashboard-1024x636.webp 1024w, {{ site.baseurl }}/assets/media/jaxn-fleet-dashboard-768x477.webp 768w, {{ site.baseurl }}/assets/media/jaxn-fleet-dashboard-1536x954.webp 1536w" width="1920"/></figure>
+</div>
+</section>
+<section class="block-group jx-casesplit alignfull has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-columns alignwide is-layout-flex layout-columns-7387b849">
+<div class="block-column jx-intro is-layout-flow" style="flex-basis:380px">
+<p class="jx-eyebrow">The problem</p>
+<h2 class="block-heading">Remote sites, no clear picture.</h2>
+</div>
+<div class="block-column jx-casesplit__body is-layout-flow">
+<p>Managing a fleet of solar charge controllers is hard when they’re spread across remote, hard-to-reach locations. Off-the-shelf tools were too generic, too expensive, or didn’t combine controller telemetry with the router data. Operators needed to know:</p>
+<ul class="block-list jx-checklist">
+<li>Which devices are online and healthy</li>
+<li>Which sites are underperforming or at risk</li>
+<li>When batteries are in danger: over-voltage, under-voltage, temperature</li>
+<li>Whether solar input is enough, or there’s a wiring or shading issue</li>
+<li>How on-site telemetry lines up with cloud device data and locations</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="block-group jx-casesolution alignfull has-sand-background-color has-background has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-columns alignwide are-vertically-aligned-bottom jx-casesolution__head is-layout-flex layout-columns-7387b849">
+<div class="block-column is-vertically-aligned-bottom jx-intro is-layout-flow" style="flex-basis:380px">
+<p class="jx-eyebrow">The solution</p>
+<h2 class="block-heading">How it works.</h2>
+</div>
+<div class="block-column is-vertically-aligned-bottom is-layout-flow">
+<p>The backend takes in telemetry from each controller, keeps the latest state per device, logs history, merges it with Peplink IC2 cloud data and locations, and serves a clean API to the dashboard.</p>
+</div>
+</div>
+<figure class="block-image size-full jx-diagram alignwide"><img alt="How the Fleet Dashboard works: MPPT controllers post telemetry to an ingest endpoint; the registry runs diagnostics, logs history and merges Peplink IC2 cloud data; the fleet dashboard shows the map, table and alerts" decoding="async" height="680" sizes="(max-width: 2400px) 100vw, 2400px" src="{{ site.baseurl }}/assets/media/jaxn-fleet-how-it-works.webp" srcset="{{ site.baseurl }}/assets/media/jaxn-fleet-how-it-works.webp 2400w, {{ site.baseurl }}/assets/media/jaxn-fleet-how-it-works-300x85.webp 300w, {{ site.baseurl }}/assets/media/jaxn-fleet-how-it-works-1024x290.webp 1024w, {{ site.baseurl }}/assets/media/jaxn-fleet-how-it-works-768x218.webp 768w, {{ site.baseurl }}/assets/media/jaxn-fleet-how-it-works-1536x435.webp 1536w, {{ site.baseurl }}/assets/media/jaxn-fleet-how-it-works-2048x580.webp 2048w" width="2400"/></figure>
+</section>
+<section class="block-group jx-casecaps alignfull has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-group jx-features__head jx-casecaps__head alignwide is-content-justification-space-between is-layout-flex layout-group-8a23d30d">
+<div class="block-group jx-intro is-layout-flow">
+<p class="jx-eyebrow">Key capabilities</p>
+<h2 class="block-heading">What it does.</h2>
+</div>
+<ul class="block-list jx-tags">
+<li>Node.js</li>
+<li>Express</li>
+<li>Leaflet</li>
+<li>Peplink IC2 API</li>
+<li>Python</li>
+<li>Modbus</li>
+<li>CSV registry</li>
+</ul>
+</div>
+<div class="block-group jx-features__grid jx-casecaps__grid alignwide is-layout-grid layout-group-40fe1019">
+<div class="block-group jx-feat is-layout-flow">
+<p class="jx-feat__num">01</p>
+<h3 class="block-heading">Telemetry ingestion</h3>
+<p>Controllers post JSON readings to one simple HTTP endpoint.</p>
+</div>
+<div class="block-group jx-feat is-layout-flow">
+<p class="jx-feat__num">02</p>
+<h3 class="block-heading">Device registry</h3>
+<p>A local record per device, with the latest state always on hand.</p>
+</div>
+<div class="block-group jx-feat is-layout-flow">
+<p class="jx-feat__num">03</p>
+<h3 class="block-heading">History logging</h3>
+<p>Every reading is kept for long-term analysis.</p>
+</div>
+<div class="block-group jx-feat is-layout-flow">
+<p class="jx-feat__num">04</p>
+<h3 class="block-heading">IC2 integration</h3>
+<p>Pulls router metadata and last-known locations from Peplink’s cloud.</p>
+</div>
+<div class="block-group jx-feat is-layout-flow">
+<p class="jx-feat__num">05</p>
+<h3 class="block-heading">Diagnostics engine</h3>
+<p>Checks solar, battery, load, temperature and charging state.</p>
+</div>
+<div class="block-group jx-feat is-layout-flow">
+<p class="jx-feat__num">06</p>
+<h3 class="block-heading">Voltage detection</h3>
+<p>Works out 12 V, 24 V or 48 V systems from the readings.</p>
+</div>
+<div class="block-group jx-feat is-layout-flow">
+<p class="jx-feat__num">07</p>
+<h3 class="block-heading">Web dashboard</h3>
+<p>Map, device table and status at a glance, on desktop or tablet.</p>
+</div>
+<div class="block-group jx-feat jx-feat--note is-layout-flow">
+<p class="jx-feat__quote">Low overhead by design.</p>
+<p>Runs on ordinary shared hosting (cPanel · Passenger), no heavyweight tooling.</p>
+</div>
+</div>
+</section>
+<section class="block-group jx-nextwrap alignfull has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-group jx-next alignwide is-layout-flow">
+<div class="block-columns alignwide are-vertically-aligned-center is-layout-flex layout-columns-7387b849">
+<div class="block-column is-vertically-aligned-center jx-next__text is-layout-flow">
+<p class="jx-eyebrow">Next project</p>
+<h3 class="block-heading"><a href="{{ site.baseurl }}/executivesupport/">Executive Support Automation</a></h3>
+<p>A 55% survey return rate with PowerApps, Azure Functions and ServiceNow.</p>
+</div>
+<div class="block-column is-vertically-aligned-center is-layout-flow" style="flex-basis:360px">
+<figure class="block-image size-full jx-next__img"><img alt="Illustration: a request is automated into a survey that comes back" decoding="async" height="640" sizes="(max-width: 960px) 100vw, 960px" src="{{ site.baseurl }}/assets/media/jaxn-illustration-executive-support.webp" srcset="{{ site.baseurl }}/assets/media/jaxn-illustration-executive-support.webp 960w, {{ site.baseurl }}/assets/media/jaxn-illustration-executive-support-300x200.webp 300w, {{ site.baseurl }}/assets/media/jaxn-illustration-executive-support-768x512.webp 768w" width="960"/></figure>
+</div>
+</div>
+</div>
+</section>
+<section class="block-group jx-cta alignfull has-green-background-color has-background has-global-padding is-layout-constrained block-group-is-layout-constrained">
+<div class="block-group jx-cta__bar alignwide is-content-justification-space-between is-layout-flex layout-group-e980f4c3">
+<div class="block-group jx-cta__text is-layout-flow">
+<h2 class="block-heading">Need this kind of visibility?</h2>
+<p>From telemetry to dashboards to alerts, we build systems you can trust.</p>
+</div>
+<div class="block-buttons is-layout-flex">
+<div class="block-button is-style-light"><a class="block-button__link element-button" href="{{ site.baseurl }}/contact/">Talk about your project</a></div>
+</div>
+</div>
+</section>
+</div>
